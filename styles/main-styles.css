@@ -1,0 +1,265 @@
+/*
+
+Copper Rose
+#9e7173
+
+Bastille
+#231d26
+
+Cashmere
+#e7c6ac
+
+Medium Purple
+#835ddd
+
+offwhite #f6f6f6
+
+*/
+
+
+/* GLOBAL STYLES
+----------------------------------------------------------------- */
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+
+
+    /* Color Palette */
+    --palette-copper-rose: #9e7173;
+    --palette-bastille: #231d26;
+    --palette-cashmere: #e7c6ac;
+    --palette-medium-purple:#835ddd;
+    --palette-off-white: #f6f6f6;
+
+}
+
+html, body{
+    height: 100%;
+    font-size: 62.5%; /* Sets tje default to 10px so i can use em to multiply easily */
+}
+
+body{
+    background-color: var(--palette-off-white);
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+h1, h2, h3{
+    font-weight: 400;
+    margin:0;
+}
+h1 {
+    font-size: 7rem;
+    line-height: .85;
+}
+h2{
+    font-size: 3.6rem;
+    margin-top: 25px;
+}
+h3{
+    font-size: 2.4rem;
+}
+hr{
+    border: 0;
+    border-bottom: 1px dashed var(--palette-bastille) ;
+    background: var(--palette-off-white);
+}
+a {
+    color: var(--palette-copper-rose);
+    text-decoration: none;
+}
+
+a:hover {
+    color:var(--palette-cashmere);
+}
+
+a.btn{
+    background-color: var(--palette-copper-rose);
+    color:var(--palette-off-white);
+    text-transform: uppercase;
+    
+    letter-spacing: .1em;
+    line-height: 1;
+
+    display: inline-block;
+
+    padding: 7px;
+    border-radius: 4px;
+    box-shadow: var(--palette-bastille) 0px 3px 5px 0px;
+
+}
+a.btn:hover{
+    opacity: .7;
+}
+
+.content-wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px;
+}
+
+header p{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:750px) {
+    .resume header::before{
+        height: 200px;
+    }
+    h1{
+        font-size: 3.5rem;
+
+    }
+    h2{
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+}
+
+
+/* HOME
+----------------------------------------------------------------- */
+.home{
+    background: url(../images/city_background.jpg) no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+.content-bg{
+    background: rgb(255 255 255 / 0.9);
+    padding: 40px;
+}
+
+@media screen and (max-width: 650px) 
+{
+    .home .content-wrapper{
+        padding: 10px;
+    }
+    
+    .content-bg{
+        padding: 20px;
+    }
+}
+.home main a{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* RESUME
+----------------------------------------------------------------- */
+.resume header::before{
+    background: url(../images/city_background.jpg) center;
+    background-size: cover;
+    display: block;
+    height: 375px;
+    content:"";
+}
+
+.download-link{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1550px) {
+    .download-link{
+        position: absolute;
+    }
+}
+
+
+
+/* Work Experience 
+------------------------------------------------ */
+.work-item{
+    
+    margin: 30px 0;
+}
+
+.work-details p {
+    margin: 0;
+}
+
+.work-summary p:first-child{
+    margin-top: 0;
+    
+}
+
+@media screen and (min-width: 860px){
+    .work-item{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 25px;
+    }
+
+    .work-summary p:first-child{
+        margin-top: 0;
+        
+    }
+}
+
+/* Education Sesction
+----------------------------------------------------------------- */
+.education-item{
+    margin: 30px 0;
+}
+.education-item p{
+    margin: 0;
+}
+
+
+
+/* FOOTER
+----------------------------------------------------------------- */
+footer {
+    background:#231d26;
+    
+}
+
+
+
+.socials{
+    list-style-type: none;
+    padding: 0;
+    
+}
+.socials li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 48px;
+}
+
+.socials img:hover {
+    opacity: 50%;
+}
+
+@media screen and (min-width: 860px)   {
+    footer{
+        display:flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 860px)   {
+    footer{
+        text-align: center;
+        padding: 10px;
+    }
+}
