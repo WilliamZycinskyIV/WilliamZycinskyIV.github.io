@@ -232,7 +232,7 @@ footer {
 }
 
 footer p{
-    white-space: pre;
+    color: var(--palette-cashmere);
 }
 
 
