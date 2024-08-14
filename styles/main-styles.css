@@ -264,3 +264,10 @@ footer p{
     margin-top:20px;
     border-bottom: 1px solid var(--palette-cashmere);
 }
+
+footer a{
+    color: var(--palette-cashmere);
+}
+footer a:hover{
+    opacity: .8;
+}
