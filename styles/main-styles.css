@@ -137,7 +137,29 @@ header p{
 .content-bg{
     background: rgb(255 255 255 / 0.9);
     padding: 40px;
+    
 }
+
+.home main a{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1110px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 775px){
+    .content-bg{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 45px;
+    }
+}
+
 
 @media screen and (max-width: 650px) 
 {
@@ -149,12 +171,6 @@ header p{
         padding: 20px;
     }
 }
-.home main a{
-    text-decoration: underline;
-}
-
-
-
 
 
 /* RESUME
